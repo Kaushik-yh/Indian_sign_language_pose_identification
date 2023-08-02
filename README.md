@@ -52,7 +52,7 @@ The output of various models were compared and the best results were selected fr
 
 | Model Type | Frames per video | Training accuracy | Testing Accuracy |
 | --- | --- | --- | --- |
-| Logistic Regression | 180 | 1 & 0.3932 | 
+| Logistic Regression | 180 | 1 | 0.3932 | 
 | Decision Tree | 180 | 1 | 0.5799 | 
 | Random Forest | 180 | 1 | 0.8345 | 
 | Ada Boost | 180 | 1 | 0.8203 | 
