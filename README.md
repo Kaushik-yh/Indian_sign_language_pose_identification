@@ -60,7 +60,32 @@ The output of various models were compared and the best results were selected fr
 | LSTM | 180 | 0.587 | 0.1019 | 
 | GRU | 180 | 1 | 0.3992 | 
 | Self-Attention NN | 180 | 0.9694 | 0.9056| 
-| Self- Multihead Attention NN | 180 | 0.9645 | 0.8992 | 
+| Multihead Self-Attention NN | 180 | 0.9645 | 0.8992 | 
 
 ## Sign pose generation using Unity
 
+The pose co-ordinates extracted by the Mediapipe API, which were used to train the ML models are being used again to recreate the videos using the animation and game development software - Unity.
+The CSVs files that contain the pose-coordinates are loaded into Unity software, the pose animation is recreated by conneting GameObjects and animating them using the C# script for the joints and bones connecting the joints.\
+![Good Morning_ISL](https://github.com/Kaushik-yh/Indian_sign_language_pose_identification/assets/138836652/30cd3d5d-d6ee-4b5d-a9c2-c46daceb45fc)
+
+gif: The animation representing the sign of "Good Morning" in Indian Sign Language
+
+![Actor_ISL](https://github.com/Kaushik-yh/Indian_sign_language_pose_identification/assets/138836652/1c2e92a4-e2ef-49f7-a9ac-07ad284842db)
+
+gif: The animation representing the sign of "Actor" in Indian Sign Language
+
+The Animation can be re-created for all the bellow signed words from Indian Sign Language
+  * **Adjectives**: Pleased, Cold, Warm, Quiet, Loud, Clean, Attack, Healthy, Peace, Wide, Cheap, Dry, Happy, Young, Fast, Alright, Short, Sick, Curved, Beautiful, Hard, Long, Heavy, Big, Small, Old, Wet, Low, Narrow, Slow, Hot, Poor, High, Adult, Famous, Sad, Shallow, Week, Cool, Deep, Tight, Good, Bad, Light, Expensive, Alive, New, Strong, Tall, Loose, Rich, Deaf, Thin, Dirty, Ugly, Dead, Nice, Thick, Soft, Blind, Mean, Flat
+  * **Animals**: Cat, Cow, Animal, Mouse, Dog, Horse, Fish, Bird
+  * **Clothes**: Pant, Clothing, Skirt, Hat, Shoes, Shirt, Pocket, Suit, T Shirt, Dress, Ring
+  * **Colors**: Colour, Black, Yellow, Green, White, Orange, Blue, Grey, Brown, Pink, Red
+  * **Days and Time**: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Evening, Morning, Second, Night, Year, Weak, Time, Month, Minute, Today, Hour, Afternoon, Yesterday, Tomorrow
+  * **Electronic devices**: Television, Telephone, Laptop, Screen, Camera, Energy, Computer, Radio, Phone
+  * **Greetings**: Hello, Good Morning, Good Afternoon, Good Night, You all, Thank You, How are you, Good evening
+  * **Household Items**: Lock, Book, Medicine, Lamp, Photograph, Newspaper, Bathroom, Kitchen, Pen, Bed, Table, Paint, Box, Train ticket, Bill, Key, Bedroom, Letter, Ball, Chair, Fan, Bag, Door, Paper, Pencil, Tool, Soap, Page, Card, Window, Clock
+  * **Various Professions**: Police, Actor, Secretary, Student, Patient, Player, Waiter, Manager, Soldier, Lawyer, Doctor, President, Artist, Priest, Author, Reporter
+  * **Means of Transportation**: Car, Bus, Bicycle, Sign, Plane, Boat, Transportation, Truck, Train
+  * **People**: Child, Baby, Girl, Mother, Woman, Grandmother, Daughter, Neighbour, Friend, Husband, Sister, Wife, Son, Brother, Man, King, Queen, Father, Teacher, Boy, Parent, Family, Grandfather
+  * **Pronouns**: Male, She, Me, You, We, It, They, He, Female
+  * **Seasons**: Monsoon, Winter, Fall, Summer, Spring, Season
+  * **Society**: Religion, Science, Marriage, God, War, Job, Election, Sport, Ethnicity, Death, Team, Crowd, Price, Exercise, Money, Dream, Technology
